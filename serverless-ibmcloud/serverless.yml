@@ -1,0 +1,14 @@
+service: serverless-ibmcloud
+provider:
+  name: openwhisk
+  runtime: java
+package:
+  artifact: target/serverless-ibmcloud.jar
+functions:
+  repositories:
+    name: goapigo/github-repositories
+    handler: target/serverless-ibmcloud.jar:com.goapigo.example.RepositoriesFunction
+    events:
+      - http: GET /github/repositories
+plugins:
+  - 'serverless-openwhisk'
