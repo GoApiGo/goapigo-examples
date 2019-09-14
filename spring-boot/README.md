@@ -4,7 +4,7 @@ That is an example using Spring Boot and GoApiGo to build an scraper that return
 
 Request:
 ```
-$ curl -X GET http://localhost:8080/api/github?user=epiresdasilva
+$ curl -X GET http://localhost:8080/api/github/repositories?user=epiresdasilva
 ```
 Response:
 ```
