@@ -2,9 +2,8 @@ package com.goapigo.example.dto;
 
 import com.goapigo.core.annotations.GoApiGo;
 import com.goapigo.core.annotations.ListBy;
-import lombok.Getter;
-
 import java.util.List;
+import lombok.Getter;
 
 @Getter
 @GoApiGo
